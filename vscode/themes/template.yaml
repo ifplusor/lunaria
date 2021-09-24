@@ -1,0 +1,1464 @@
+$schema: "vscode://schemas/color-theme"
+type: "@_type@"
+semanticHighlighting: true
+
+# User Interface (more info: https://code.visualstudio.com/docs/getstarted/theme-color-reference)
+colors:
+  # =============================================================================
+  # Built-in colors
+  # =============================================================================
+
+  # Contrast colors (for high contrast themes)
+  # contrastActiveBorder:
+  # contrastBorder:
+
+  # Base colors
+  focusBorder: "@mediumGray@"
+  foreground: "@fg@"
+  widget.shadow: "@mediumGray@"
+  selection.background: "@bgLowlight@40"
+  descriptionForeground: "@fg@"
+  errorForeground: "@softRed@"
+  icon.foreground: "@fg@"
+  # sash.hoverBorder:
+
+  # Window border
+  # window.activeBorder:
+  # window.inactiveBorder:
+
+  # Text colors
+  textBlockQuote.background: "@emphBg@"
+  textBlockQuote.border: "#00000000"
+  textCodeBlock.background: "@emphBg@"
+  textLink.foreground: "@vividViolet@"
+  textLink.activeForeground: "@softViolet@"
+  textPreformat.foreground: "@fg@"
+  textSeparator.foreground: "@mediumGray@"
+
+  # Action colors
+  # toolbar.hoverBackground:
+  # toolbar.hoverOutline:
+  # toolbar.activeBackground:
+
+  # Button control
+  button.background: "@vividViolet@"
+  button.foreground: "@bg@"
+  # button.border:
+  button.hoverBackground: "@softViolet@"
+  button.secondaryBackground: "@mediumGray@"
+  button.secondaryForeground: "@bg@"
+  button.secondaryHoverBackground: "@fg@"
+  checkbox.background: "@emphBg@"
+  checkbox.foreground: "@fg@"
+  checkbox.border: "@mediumGray@"
+
+  # Dropdown control
+  dropdown.background: "@emphBg@"
+  dropdown.listBackground: "@emphBg@"
+  dropdown.foreground: "@fg@"
+  dropdown.border: "@mediumGray@"
+
+  # Input control
+  input.background: "@emphBg@"
+  input.foreground: "@fg@"
+  # input.border:
+  input.placeholderForeground: "@mediumGray@"
+  inputOption.activeBackground: "@softViolet@"
+  inputOption.activeForeground: "@bg@"
+  inputOption.activeBorder: "#00000000"
+  inputValidation.errorBackground: "@emphBg@"
+  inputValidation.errorForeground: "@fg@"
+  inputValidation.errorBorder: "@vividRed@"
+  inputValidation.infoBackground: "@emphBg@"
+  inputValidation.infoForeground: "@fg@"
+  inputValidation.infoBorder: "@mediumGray@"
+  inputValidation.warningBackground: "@emphBg@"
+  inputValidation.warningForeground: "@fg@"
+  inputValidation.warningBorder: "@vividYellow@"
+
+  # Scrollbar control
+  scrollbar.shadow: "@mediumGray@"
+  scrollbarSlider.activeBackground: "@fg@80"
+  scrollbarSlider.background: "@mediumGray@80"
+  scrollbarSlider.hoverBackground: "@fg@80"
+
+  # Badge
+  badge.background: "@vividViolet@"
+  badge.foreground: "@bg@"
+
+  # Progress bar
+  progressBar.background: "@emphBg@"
+
+  # List and trees
+  list.activeSelectionBackground: "@deEmphBg@"
+  list.activeSelectionForeground: "@emphFg@"
+  # list.activeSelectionIconForeground:
+  # list.dropBackground: "@softBlue@"
+  list.focusBackground: "@softBlue@80"
+  list.focusForeground: "@emphBg@"
+  # list.focusHighlightForeground:
+  # list.focusOutline:
+  list.highlightForeground: "@emphFg@"
+  list.hoverBackground: "@deEmphBg@80"
+  list.hoverForeground: "@fg@"
+  list.inactiveSelectionBackground: "@deEmphBg@"
+  list.inactiveSelectionForeground: "@fg@"
+  # list.inactiveSelectionIconForeground:
+  list.inactiveFocusBackground: "@softBlue@"
+  # list.inactiveFocusOutline:
+  list.invalidItemForeground: "@fg@"
+  list.errorForeground: "@fg@"
+  list.warningForeground: "@fg@"
+  listFilterWidget.background: "@emphBg@"
+  listFilterWidget.outline: "@mediumGray@"
+  listFilterWidget.noMatchesOutline: "@vividRed@"
+  list.filterMatchBackground: "@emphBg@"
+  # list.filterMatchBorder:
+  list.deemphasizedForeground: "@mediumGray@"
+  tree.indentGuidesStroke: "@mediumGray@"
+  # tree.tableColumnsBorder:
+
+  # Activity Bar
+  activityBar.background: "@invBg@"
+  activityBar.foreground: "@invEmphFg@"
+  # activityBar.border:
+  activityBar.activeBackground: "@invBg@"
+  activityBar.activeBorder: "@vividViolet@"
+  # activityBar.activeFocusBorder:
+  activityBar.inactiveForeground: "@invFg@"
+  # activityBar.dropBorder: "@bg@"
+  activityBarBadge.background: "@invVividViolet@"
+  activityBarBadge.foreground: "@invBg@"
+
+  # Side Bar
+  sideBar.background: "@bg@"
+  sideBar.foreground: "@fg@"
+  sideBar.border: "@emphFg@"
+  sideBar.dropBackground: "@bg@"
+  sideBarTitle.foreground: "@fg@"
+  sideBarSectionHeader.background: "#00000000"
+  # sideBarSectionHeader.foreground: "@fg@"
+  sideBarSectionHeader.border: "@mediumGray@"
+
+  # Minimap
+  minimap.findMatchHighlight: "@bgHighlight@80"
+  minimap.selectionHighlight: "@bgLowlight@40"
+  minimap.errorHighlight: "@vividRed@80"
+  minimap.warningHighlight: "@vividYellow@80"
+  # minimap.background:
+  minimapSlider.background: "@deEmphFg@80"
+  minimapSlider.hoverBackground: "@mediumGray@80"
+  minimapSlider.activeBackground: "@mediumGray@80"
+  minimapGutter.addedBackground: "@bgGreen@"
+  minimapGutter.modifiedBackground: "@bgBlue@"
+  minimapGutter.deletedBackground: "@bgRed@"
+
+  # Editor Groups & Tabs
+  editorGroup.border: "@mediumGray@"
+  editorGroup.dropBackground: "@bgLowlight@40"
+  editorGroupHeader.noTabsBackground: "@emphBg@"
+  editorGroupHeader.tabsBackground: "@emphBg@"
+  # editorGroupHeader.tabsBorder:
+  # editorGroupHeader.border:
+  # editorGroup.emptyBackground:
+  # editorGroup.focusedEmptyBorder
+  tab.border: "@bg@"
+  tab.activeBackground: "@bg@"
+  tab.activeForeground: "@fg@"
+  # tab.activeBorder:
+  # tab.activeBorderTop:
+  tab.activeModifiedBorder: "@bgBlue@"
+  tab.unfocusedActiveBackground: "@bg@"
+  tab.unfocusedActiveForeground: "@fg@"
+  # tab.unfocusedActiveBorder:
+  # tab.unfocusedActiveBorderTop:
+  tab.unfocusedActiveModifiedBorder: "@bgBlue@c0"
+  tab.inactiveBackground: "@emphBg@"
+  tab.inactiveForeground: "@mediumGray@"
+  tab.inactiveModifiedBorder: "@bgBlue@80"
+  # tab.unfocusedInactiveBackground: "@emphBg@"
+  tab.unfocusedInactiveForeground: "@mediumGray@"
+  tab.unfocusedInactiveModifiedBorder: "@bgBlue@40"
+  # tab.hoverBackground:
+  tab.hoverForeground: "@fg@"
+  # tab.hoverBorder:
+  # tab.unfocusedHoverBackground:
+  tab.unfocusedHoverForeground: "@fg@"
+  # tab.unfocusedHoverBorder:
+  # tab.lastPinnedBorder:
+  editorPane.background: "@emphBg@"
+
+  # Editor colors
+  editor.background: "@bg@"
+  editor.foreground: "@fg@"
+  editorLineNumber.foreground: "@softBlue@"
+  editorLineNumber.activeForeground: "@vividBlue@"
+  # editorCursor.background:
+  editorCursor.foreground: "@emphFg@"
+
+  editor.selectionBackground: "@bgLowlight@40"
+  # editor.selectionForeground:
+  editor.inactiveSelectionBackground: "@bgLowlight@20"
+  editor.selectionHighlightBackground: "@bgLowlight@20"
+  # editor.selectionHighlightBorder:
+
+  editor.wordHighlightBackground: "@bgLowlight@20"
+  editor.wordHighlightBorder: "@deEmphFg@"
+  editor.wordHighlightStrongBackground: "@bgLowlight@20"
+  editor.wordHighlightStrongBorder: "@fg@"
+
+  editor.findMatchBackground: "@bgHighlight@"
+  # editor.findMatchBorder:
+  editor.findMatchHighlightBackground: "@bgHighlight@80"
+  # editor.findMatchHighlightBorder:
+  editor.findRangeHighlightBackground: "@bgHighlight@40"
+  # editor.findRangeHighlightBorder:
+
+  searchEditor.findMatchBackground: "@bgYellow@80"
+  # searchEditor.findMatchBorder:
+  searchEditor.textInputBorder: "@mediumGray@"
+
+  editor.hoverHighlightBackground: "@softViolet@40"
+
+  # editor.lineHighlightBackground:
+  editor.lineHighlightBorder: "#00000000"
+
+  editorLink.activeForeground: "@softViolet@"
+
+  editor.rangeHighlightBackground: "@bgHighlight@40"
+  # editor.rangeHighlightBorder:
+
+  editor.symbolHighlightBackground: "@softBlue@40"
+  # editor.symbolHighlightBorder:
+
+  editorWhitespace.foreground: "@mediumGray@"
+
+  editorIndentGuide.background: "@mediumGray@"
+  editorIndentGuide.activeBackground: "@fg@"
+
+  # editorInlayHint.background:
+  # editorInlayHint.foreground:
+
+  editorRuler.foreground: "@mediumGray@80"
+  # editor.linkedEditingBackground:
+
+  editorCodeLens.foreground: "@mediumGray@"
+
+  editorLightBulb.foreground: "@vividYellow@"
+  editorLightBulbAutoFix.foreground: "@vividYellow@"
+
+  editorBracketMatch.background: "@emphBg@80"
+  editorBracketMatch.border: "@fg@"
+  # editorBracketHighlight.foreground1:
+  # editorBracketHighlight.foreground2:
+  # editorBracketHighlight.foreground3:
+  # editorBracketHighlight.foreground4:
+  # editorBracketHighlight.foreground5:
+  # editorBracketHighlight.foreground6:
+  # editorBracketHighlight.unexpectedBracket.foreground:
+
+  editor.foldBackground: "@mediumGray@40"
+
+  # editorOverviewRuler.background:
+  editorOverviewRuler.border: "@mediumGray@"
+  editorOverviewRuler.findMatchForeground: "@bgHighlight@80"
+  editorOverviewRuler.rangeHighlightForeground: "@bgHighlight@40"
+  editorOverviewRuler.selectionHighlightForeground: "@bgLowlight@80"
+  editorOverviewRuler.wordHighlightForeground: "@softBlue@80"
+  editorOverviewRuler.wordHighlightStrongForeground: "@vividBlue@80"
+  editorOverviewRuler.modifiedForeground: "@bgBlue@80"
+  editorOverviewRuler.addedForeground: "@bgGreen@80"
+  editorOverviewRuler.deletedForeground: "@bgRed@80"
+  editorOverviewRuler.errorForeground: "@vividRed@80"
+  editorOverviewRuler.warningForeground: "@vividYellow@80"
+  editorOverviewRuler.infoForeground: "@vividGreen@80"
+  editorOverviewRuler.bracketMatchForeground: "@emphBg@80"
+
+  # editorError.background:
+  editorError.foreground: "@vividRed@"
+  # editorError.border:
+  # editorWarning.background:
+  editorWarning.foreground: "@vividYellow@"
+  # editorWarning.border:
+  # editorinfo.background:
+  editorInfo.foreground: "@vividGreen@"
+  # editorinfo.border:
+  editorHint.foreground: "@fg@"
+  # editorHint.border:
+  # problemsErrorIcon.foreground: "@vividRed@"
+  # problemsWarningIcon.foreground: "@vividYellow@"
+  # problemsInfoIcon.foreground: "@vividGreen@"
+
+  # editorUnnecessaryCode.border:
+  # editorUnnecessaryCode.opacity: "#00000077"
+
+  # editorGutter.background: "@bg@"
+  editorGutter.modifiedBackground: "@bgBlue@80"
+  editorGutter.addedBackground: "@bgGreen@80"
+  editorGutter.deletedBackground: "@bgRed@80"
+  editorGutter.commentRangeForeground: "@mediumGray@"
+  # editorGutter.foldingControlForeground: "@fg@"
+
+  # Diff editor colors
+  # diffEditor.border:
+  diffEditor.insertedTextBackground: "@bgGreen@40"
+  # diffEditor.insertedTextBorder:
+  diffEditor.removedTextBackground: "@bgRed@40"
+  # diffEditor.removedTextBorder:
+  diffEditor.diagonalFill: "@mediumGray@80"
+
+  # Editor widget colors
+  editorWidget.background: "@emphBg@"
+  editorWidget.foreground: "@fg@"
+  editorWidget.border: "@mediumGray@"
+  # editorWidget.resizeBorder:
+  editorSuggestWidget.background: "@emphBg@"
+  editorSuggestWidget.foreground: "@fg@"
+  editorSuggestWidget.border: "@mediumGray@"
+  # editorSuggestWidget.highlightForeground: "@emphFg@"
+  # editorSuggestWidget.focusHighlightForeground:
+  # editorSuggestWidget.selectedBackground: "@softBlue@"
+  # editorSuggestWidget.selectedForeground:
+  # editorSuggestWidget.selectedIconForeground:
+  editorHoverWidget.background: "@emphBg@"
+  editorHoverWidget.foreground: "@fg@"
+  editorHoverWidget.border: "@mediumGray@"
+  editorHoverWidget.statusBarBackground: "@emphBg@"
+  # editorGhostText.foreground:
+  # editorGhostText.border:
+  debugExceptionWidget.background: "@emphBg@"
+  debugExceptionWidget.border: "@mediumGray@"
+  editorMarkerNavigation.background: "@emphBg@"
+  editorMarkerNavigationError.background: "@vividRed@"
+  # editorMarkerNavigationError.headerBackground:
+  editorMarkerNavigationWarning.background: "@vividYellow@"
+  # editorMarkerNavigationWarning.headerBackground:
+  editorMarkerNavigationInfo.background: "@vividGreen@"
+  # editorMarkerNavigationInfo.headerBackground
+
+  # Peek view colors
+  peekView.border: "@mediumGray@"
+  peekViewEditor.background: "@emphBg@"
+  peekViewEditorGutter.background: "@emphBg@"
+  peekViewEditor.matchHighlightBackground: "@softMagenta@40"
+  # peekViewEditor.matchHighlightBorder:
+  peekViewResult.background: "@emphBg@"
+  peekViewResult.fileForeground: "@emphFg@"
+  peekViewResult.lineForeground: "@fg@"
+  peekViewResult.matchHighlightBackground: "@softMagenta@40"
+  peekViewResult.selectionBackground: "@deEmphFg@"
+  peekViewResult.selectionForeground: "@fg@"
+  peekViewTitle.background: "@emphBg@"
+  peekViewTitleDescription.foreground: "@fg@"
+  peekViewTitleLabel.foreground: "@emphFg@"
+
+  # Merge conflicts colors
+  # merge.border:
+  merge.currentContentBackground: "@bgRed@40"
+  merge.currentHeaderBackground: "@bgRed@80"
+  merge.incomingContentBackground: "@bgGreen@40"
+  merge.incomingHeaderBackground: "@bgGreen@80"
+  merge.commonContentBackground: "@mediumGray@40"
+  merge.commonHeaderBackground: "@mediumGray@80"
+  editorOverviewRuler.currentContentForeground: "@bgRed@80"
+  editorOverviewRuler.incomingContentForeground: "@bgGreen@80"
+  editorOverviewRuler.commonContentForeground: "@mediumGray@80"
+
+  # Panel colors
+  panel.background: "@bg@"
+  panel.border: "@emphFg@"
+  panel.dropBorder: "#00000000"
+  panelTitle.activeForeground: "@emphFg@"
+  panelTitle.activeBorder: "@emphFg@"
+  panelTitle.inactiveForeground: "@fg@"
+  panelInput.border: "@mediumGray@"
+  # panelSection.border: "@emphFg@"
+  panelSection.dropBackground: "#00000000"
+  panelSectionHeader.background: "#00000000"
+  # panelSectionHeader.foreground:
+  panelSectionHeader.border: "@mediumGray@"
+
+  # Status Bar colors
+  statusBar.background: "@vividViolet@"
+  statusBar.foreground: "@bg@"
+  # statusBar.border:
+  statusBar.debuggingBackground: "@vividGreen@"
+  statusBar.debuggingForeground: "@bg@"
+  # statusBar.debuggingBorder:
+  statusBar.noFolderBackground: "@vividYellow@"
+  statusBar.noFolderForeground: "@bg@"
+  # statusBar.noFolderBorder:
+  statusBarItem.activeBackground: "@mediumGray@"
+  statusBarItem.hoverBackground: "@softViolet@"
+  statusBarItem.prominentBackground: "@vividBlue@"
+  statusBarItem.prominentForeground: "@bg@"
+  statusBarItem.prominentHoverBackground: "@softBlue@"
+  statusBarItem.remoteBackground: "@vividMagenta@"
+  statusBarItem.remoteForeground: "@bg@"
+  # statusBarItem.errorBackground:
+  # statusBarItem.errorForeground:
+  # statusBarItem.warningBackground:
+  # statusBarItem.warningForeground:
+
+  # Title Bar colors
+  titleBar.border: "@mediumGray@"
+  titleBar.activeBackground: "@invBg@"
+  titleBar.activeForeground: "@invEmphFg@"
+  titleBar.inactiveBackground: "@invBg@"
+  titleBar.inactiveForeground: "@invFg@"
+
+  # Menu Bar colors
+  menubar.selectionBackground: "@fg@"
+  menubar.selectionForeground: "@emphBg@"
+  # menubar.selectionBorder:
+  menu.background: "@emphBg@"
+  menu.foreground: "@fg@"
+  menu.border: "@mediumGray@"
+  menu.selectionBackground: "@bg@"
+  menu.selectionForeground: "@fg@"
+  menu.separatorBackground: "@mediumGray@"
+
+  # Notification colors
+  notificationCenter.border: "@emphFg@"
+  notificationCenterHeader.background: "@emphBg@"
+  notificationCenterHeader.foreground: "@fg@"
+  notificationToast.border: "@mediumGray@"
+  notifications.background: "@emphBg@"
+  notifications.foreground: "@fg@"
+  notifications.border: "@mediumGray@"
+  notificationLink.foreground: "@softViolet@"
+  notificationsErrorIcon.foreground: "@softRed@"
+  notificationsInfoIcon.foreground: "@fg@"
+  notificationsWarningIcon.foreground: "@vividYellow@"
+
+  # Banner colors
+  # banner.background:
+  # banner.foreground:
+  # banner.iconForeground:
+
+  # Extensions colors
+  extensionButton.prominentBackground: "@vividBlue@"
+  extensionButton.prominentForeground: "@emphBg@"
+  extensionButton.prominentHoverBackground: "@softBlue@"
+  extensionBadge.remoteBackground: "@vividMagenta@"
+  extensionBadge.remoteForeground: "@emphBg@"
+  # extensionIcon.starForeground:
+
+  # Quick picker colors
+  pickerGroup.border: "@mediumGray@"
+  pickerGroup.foreground: "@fg@"
+  quickInput.background: "@emphBg@"
+  # quickInput.foreground: "@fg@"
+  # quickInputList.focusBackground:
+  # quickInputList.focusForeground:
+  # quickInputList.focusIconForeground:
+  quickInputTitle.background: "@emphBg@"
+
+  # Keybinding label colors
+  # keybindingLabel.background:
+  # keybindingLabel.foreground:
+  # keybindingLabel.border:
+  # keybindingLabel.bottomBorder:
+
+  # Integrated Terminal colors
+  # terminal.background:
+  terminal.foreground: "@fg@"
+  terminal.border: "@mediumGray@"
+  terminal.ansiBlack: "@black@"
+  terminal.ansiBlue: "@termLowViolet@"
+  terminal.ansiBrightBlack: "@darkGray@"
+  terminal.ansiBrightBlue: "@termHighViolet@"
+  terminal.ansiBrightCyan: "@termHighBlue@"
+  terminal.ansiBrightGreen: "@termHighGreen@"
+  terminal.ansiBrightMagenta: "@termHighMagenta@"
+  terminal.ansiBrightRed: "@termHighRed@"
+  terminal.ansiBrightWhite: "@white@"
+  terminal.ansiBrightYellow: "@termHighYellow@"
+  terminal.ansiCyan: "@termLowBlue@"
+  terminal.ansiGreen: "@termLowGreen@"
+  terminal.ansiMagenta: "@termLowMagenta@"
+  terminal.ansiRed: "@termLowRed@"
+  terminal.ansiWhite: "@lightGray@"
+  terminal.ansiYellow: "@termLowYellow@"
+  terminal.selectionBackground: "@bgLowlight@40"
+  # terminalCursor.background:
+  # terminalCursor.foreground:
+  # terminal.dropBackground:
+  # terminal.tab.activeBorder:
+
+  # Debug colors
+  debugToolBar.background: "@emphBg@"
+  # debugToolBar.border:
+  editor.stackFrameHighlightBackground: "@bgHighlight@80"
+  editor.focusedStackFrameHighlightBackground: "@bgGreen@40"
+  # editor.inlineValuesBackground:
+  # editor.inlineValuesForeground:
+  debugView.exceptionLabelBackground: "@vividRed@"
+  debugView.exceptionLabelForeground: "@emphBg@"
+  debugView.stateLabelBackground: "@mediumGray@40"
+  # debugView.stateLabelForeground: "@fg@"
+  debugView.valueChangedHighlight: "@vividBlue@"
+  debugTokenExpression.name: "@vividMagenta@"
+  debugTokenExpression.value: "@fg@"
+  debugTokenExpression.string: "@softRed@"
+  debugTokenExpression.boolean: "@vividViolet@"
+  debugTokenExpression.number: "@vividGreen@"
+  debugTokenExpression.error: "@vividRed@"
+
+  # Testing colors
+  # testing.iconFailed:
+  # testing.iconErrored:
+  # testing.iconPassed:
+  # testing.runAction:
+  # testing.iconQueued:
+  # testing.iconUnset:
+  # testing.iconSkipped:
+  # testing.peekBorder:
+  # testing.peekHeaderBackground:
+  # testing.message.error.decorationForeground:
+  # testing.message.error.lineBackground:
+  # testing.message.info.decorationForeground:
+  # testing.message.info.lineBackground:
+
+  # Welcome page colors
+  # welcomePage.background:
+  # welcomePage.buttonBackground:
+  # welcomePage.buttonHoverBackground:
+  # welcomePage.progress.background:
+  # welcomePage.progress.foreground:
+  # welcomePage.tileBackground:
+  # welcomePage.tileHoverBackground:
+  # welcomePage.tileShadow.:
+  # walkThrough.embeddedEditorBackground:
+
+  # Source Control colors
+  scm.providerBorder: "@mediumGray@"
+
+  # Git colors
+  gitDecoration.addedResourceForeground: "@fg@"
+  gitDecoration.modifiedResourceForeground: "@fg@"
+  gitDecoration.deletedResourceForeground: "@fg@"
+  # gitDecoration.renamedResourceForeground:
+  # gitDecoration.stageModifiedResourceForeground:
+  # gitDecoration.stageDeletedResourceForeground:
+  gitDecoration.untrackedResourceForeground: "@fg@"
+  gitDecoration.ignoredResourceForeground: "@fg@"
+  gitDecoration.conflictingResourceForeground: "@fg@"
+  gitDecoration.submoduleResourceForeground: "@fg@"
+
+  # Settings Editor colors
+  settings.headerForeground: "@emphFg@"
+  settings.modifiedItemIndicator: "@bgBlue@"
+  # settings.dropdownBackground: "@emphBg@"
+  # settings.dropdownForeground: "@fg@"
+  # settings.dropdownBorder: "@mediumGray@"
+  # settings.dropdownListBorder: "@mediumGray@"
+  # settings.checkboxBackground: "@emphBg@"
+  # settings.checkboxForeground: "@fg@"
+  # settings.checkboxBorder: "@mediumGray@"
+  # settings.rowHoverBackground:
+  # settings.textInputBackground: "@emphBg@"
+  # settings.textInputForeground: "@fg@"
+  settings.textInputBorder: "@mediumGray@"
+  # settings.numberInputBackground: "@emphBg@"
+  # settings.numberInputForeground: "@fg@"
+  settings.numberInputBorder: "@mediumGray@"
+  # settings.focusedRowBackground:
+  # settings.focusedRowBorder:
+
+  # Breadcrumbs
+  # breadcrumb.background: "@bg@"
+  breadcrumb.foreground: "@fg@"
+  breadcrumb.focusForeground: "@emphFg@"
+  breadcrumb.activeSelectionForeground: "@emphFg@"
+  # breadcrumbPicker.background: "@emphBg@"
+
+  # Snippets colors
+  editor.snippetTabstopHighlightBackground: "@softBlue@80"
+  # editor.snippetTabstopHighlightBorder:
+  # editor.snippetFinalTabstopHighlightBackground:
+  editor.snippetFinalTabstopHighlightBorder: "@softBlue@"
+
+  # Symbol Icons colors
+  # symbolIcon.arrayForeground: "@fg@"
+  # symbolIcon.booleanForeground: "@fg@"
+  symbolIcon.classForeground: "@fg@"
+  # symbolIcon.colorForeground: "@fg@"
+  # symbolIcon.constantForeground: "@fg@"
+  symbolIcon.constructorForeground: "@fg@"
+  symbolIcon.enumeratorForeground: "@fg@"
+  symbolIcon.enumeratorMemberForeground: "@fg@"
+  symbolIcon.eventForeground: "@fg@"
+  symbolIcon.fieldForeground: "@fg@"
+  # symbolIcon.fileForeground: "@fg@"
+  # symbolIcon.folderForeground: "@fg@"
+  symbolIcon.functionForeground: "@fg@"
+  symbolIcon.interfaceForeground: "@fg@"
+  # symbolIcon.keyForeground: "@fg@"
+  # symbolIcon.keywordForeground: "@fg@"
+  symbolIcon.methodForeground: "@fg@"
+  # symbolIcon.moduleForeground: "@fg@"
+  # symbolIcon.namespaceForeground: "@fg@"
+  # symbolIcon.nullForeground: "@fg@"
+  # symbolIcon.numberForeground: "@fg@"
+  # symbolIcon.objectForeground: "@fg@"
+  # symbolIcon.operatorForeground: "@fg@"
+  # symbolIcon.packageForeground: "@fg@"
+  # symbolIcon.propertyForeground: "@fg@"
+  # symbolIcon.referenceForeground: "@fg@"
+  # symbolIcon.snippetForeground: "@fg@"
+  # symbolIcon.stringForeground: "@fg@"
+  # symbolIcon.structForeground: "@fg@"
+  # symbolIcon.textForeground: "@fg@"
+  # symbolIcon.typeParameterForeground: "@fg@"
+  # symbolIcon.unitForeground: "@fg@"
+  symbolIcon.variableForeground: "@fg@"
+
+  # Debug Icons colors
+  debugIcon.breakpointForeground: "@fg@"
+  debugIcon.breakpointDisabledForeground: "@fg@"
+  debugIcon.breakpointUnverifiedForeground: "@fg@"
+  debugIcon.breakpointCurrentStackframeForeground: "@fg@"
+  debugIcon.breakpointStackframeForeground: "@fg@"
+  debugIcon.startForeground: "@fg@"
+  debugIcon.pauseForeground: "@fg@"
+  debugIcon.stopForeground: "@fg@"
+  debugIcon.disconnectForeground: "@fg@"
+  debugIcon.restartForeground: "@fg@"
+  debugIcon.stepOverForeground: "@fg@"
+  debugIcon.stepIntoForeground: "@fg@"
+  debugIcon.stepOutForeground: "@fg@"
+  debugIcon.continueForeground: "@fg@"
+  debugIcon.stepBackForeground: "@fg@"
+  # debugConsole.infoForeground: "@vividGreen@"
+  # debugConsole.warningForeground: "@vividYellow@"
+  # debugConsole.errorForeground: "@softRed@"
+  # debugConsole.sourceForeground: "@fg@"
+  # debugConsoleInputIcon.foreground: "@fg@"
+
+  # Notebook colors
+  notebook.cellBorderColor: "@mediumGray@"
+  notebook.cellHoverBackground: "@emphBg@80"
+  # notebook.cellInsertionIndicator: "@mediumGray@"
+  notebook.cellStatusBarItemHoverBackground: "@emphBg@80"
+  notebook.cellToolbarSeparator: "@mediumGray@80"
+  # notebook.cellEditorBackground:
+  notebook.focusedCellBackground: "@emphBg@"
+  notebook.focusedCellBorder: "@mediumGray@80"
+  notebook.focusedEditorBorder: "@mediumGray@"
+  # notebook.inactiveFocusedCellBorder:
+  # notebook.inactiveSelectedCellBorder:
+  notebook.outputContainerBackgroundColor: "@emphBg@"
+  # notebook.selectedCellBackground:
+  # notebook.selectedCellBorder:
+  notebook.symbolHighlightBackground: "@bgHighlight@80"
+  # notebookScrollbarSlider.background: "@mediumGray@80"
+  # notebookScrollbarSlider.activeBackground: "@fg@80"
+  # notebookScrollbarSlider.hoverBackground: "@fg@80"
+  # notebookStatusErrorIcon.foreground: "@softRed@"
+  # notebookStatusRunningIcon.foreground: "@fg@"
+  # notebookStatusSuccessIcon.foreground: "@fg@"
+
+  # Chart colors
+  # charts.foreground:
+  # charts.lines:
+  # charts.red:
+  # charts.blue:
+  # charts.yellow:
+  # charts.orange:
+  # charts.green:
+  # charts.purple:
+
+  # Ports Colors
+  # ports.iconRunningProcessForeground:
+
+  # Msic
+  editor.onTypeRenameBackground: "@bgGreen@40"
+
+  # =============================================================================
+  # Extension colors
+  # =============================================================================
+
+  # GitLens colors
+  gitlens.gutterBackgroundColor: "@deEmphFg@80"
+  gitlens.gutterForegroundColor: "@fg@"
+  gitlens.gutterUncommittedForegroundColor: "@vividBlue@"
+  gitlens.lineHighlightBackgroundColor: "@softBlue@80"
+  gitlens.lineHighlightOverviewRulerColor: "@bgGreen@80"
+  gitlens.trailingLineBackgroundColor: "#00000000"
+  gitlens.trailingLineForegroundColor: "@mediumGray@80"
+
+  imagePreview.border: "@mediumGray@"
+
+  rust_analyzer.inlayHints.background: "@bg@80"
+  rust_analyzer.inlayHints.background.chainingHints: "@bg@80"
+  rust_analyzer.inlayHints.background.parameterHints: "@bg@80"
+  rust_analyzer.inlayHints.background.typeHints: "@bg@80"
+  rust_analyzer.inlayHints.foreground: "@mediumGray@"
+  rust_analyzer.inlayHints.foreground.chainingHints: "@mediumGray@"
+  rust_analyzer.inlayHints.foreground.parameterHints: "@mediumGray@"
+  rust_analyzer.inlayHints.foreground.typeHints: "@mediumGray@"
+  rust_analyzer.syntaxTreeBorder: "@vividMagenta@"
+
+# Syntax highlight
+tokenColors:
+  # =============================================================================
+  # General
+  # =============================================================================
+
+  - scope: emphasis
+    settings:
+      fontStyle: italic
+  - scope: strong
+    settings:
+      fontStyle: bold
+
+  # Diffs
+  # =====
+
+  - scope: meta.diff.header
+    settings:
+      foreground: "@bgBlue@"
+  - scope: markup.inserted
+    settings:
+      foreground: "@bgGreen@"
+  - scope: markup.deleted
+    settings:
+      foreground: "@bgRed@"
+  - scope: markup.changed
+    settings:
+      foreground: "@bgBlue@"
+  - scope: invalid
+    settings:
+      foreground: "@vividRed@"
+      fontStyle: bold underline
+  - scope: invalid.deprecated
+    settings:
+      foreground: "@vividYellow@"
+      fontStyle: bold underline
+
+  # Markdown / RST / Prose
+  # ======================
+
+  - name: Underlined markup
+    scope: markup.underline
+    settings:
+      fontStyle: underline
+
+  - name: Bold markup
+    scope: markup.bold
+    settings:
+      foreground: "@softRed@"
+      fontStyle: bold
+
+  - name: Markup headings
+    scope:
+      - markup.heading
+    settings:
+      foreground: "@softViolet@"
+      fontStyle: bold
+
+  - name: Markup italic
+    scope: markup.italic
+    settings:
+      foreground: "@softYellow@"
+      fontStyle: italic
+
+  - name: Bullets, lists (prose)
+    scope:
+      - beginning.punctuation.definition.list.markdown
+      - beginning.punctuation.definition.quote.markdown
+      - punctuation.definition.link.restructuredtext
+    settings:
+      foreground: "@softBlue@"
+
+  - name: Inline code (prose)
+    scope:
+      - markup.inline.raw
+      - markup.raw.restructuredtext
+    settings:
+      foreground: "@softGreen@"
+
+  - name: Links (prose)
+    scope:
+      - markup.underline.link
+      - markup.underline.link.image
+    settings:
+      foreground: "@softBlue@"
+
+  - name: Link text, image alt text (prose)
+    scope:
+      - meta.link.reference.def.restructuredtext
+      - punctuation.definition.directive.restructuredtext
+      - string.other.link.description
+      - string.other.link.title
+    settings:
+      foreground: "@softMagenta@"
+
+  - name: Blockquotes (prose)
+    scope:
+      - entity.name.directive.restructuredtext
+      - markup.quote
+    settings:
+      foreground: "@softYellow@"
+      fontStyle: italic
+
+  - name: Horizontal rule (prose)
+    scope: meta.separator.markdown
+    settings:
+      foreground: "@deEmptFg@"
+
+  - name: Code blocks
+    scope:
+      - fenced_code.block.language
+      - markup.raw.inner.restructuredtext
+      - markup.fenced_code.block.markdown punctuation.definition.markdown
+    settings:
+      foreground: "@softGreen@"
+
+  - name: Prose constants
+    scope: punctuation.definition.constant.restructuredtext
+    settings:
+      foreground: "@softViolet@"
+
+  - name: Braces in markdown headings
+    scope:
+      - markup.heading.markdown punctuation.definition.string.begin
+      - markup.heading.markdown punctuation.definition.string.end
+    settings:
+      foreground: "@softViolet@"
+
+  - name: Braces in markdown paragraphs
+    scope:
+      - meta.paragraph.markdown punctuation.definition.string.begin
+      - meta.paragraph.markdown punctuation.definition.string.end
+    settings:
+      foreground: "@fg@"
+
+  - name: Braces in markdown blockquotes
+    scope:
+      - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.begin
+      - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.end
+    settings:
+      foreground: "@softYellow@"
+
+  # =============================================================================
+  # Language Common
+  # =============================================================================
+
+  # Basic Rules:
+  #
+  # 1. Font:
+  #    - Bold:      keywords
+  #    - Italic:    members
+  #    - Underline: declaration
+  #
+  # 2. Color:
+  #    - Red:     define type, return value, manage memory
+  #    - Yellow:  module
+  #    - Green:   string
+  #    - Blue:    keywords
+  #    - Violet:  type
+  #    - Magenta: parameter
+  #
+  #    - emphFg:   define function, define namespace
+  #    - deEmphFg: comment, macro
+  #
+
+  # Comments
+  # ========
+
+  - scope:
+      - comment
+      - punctuation.definition.comment
+    settings:
+      foreground: "@deEmphFg@"
+
+  # Keywords
+  # ========
+
+  - scope: keyword
+    settings:
+      fontStyle: bold
+
+  - scope:
+      - storage.modifier
+      - storage.type.modifier
+    settings:
+      foreground: "@softBlue@"
+      fontStyle: bold
+
+  # Namespace
+  # ---------
+
+  - name: Namespace keywords
+    scope: storage.type.namespace
+    settings:
+      foreground: "@emphFg@"
+      fontStyle: bold
+
+  # Types
+  # -----
+
+  - name: Class-key/enum keywords
+    scope:
+      - storage.type.class
+      - storage.type.struct
+      - storage.type.union
+      - storage.type.enum
+    settings:
+      foreground: "@softRed@"
+      fontStyle: bold
+
+  # - name: Access specifier
+  #   scope: storage.type.modifier.access.control
+  #   settings:
+  #     foreground: "@softBlue@"
+  #     fontStyle: bold
+
+  - scope: storage.type.template
+    settings:
+      fontStyle: bold
+
+  # Functions
+  # ---------
+
+  - name: Function keywords
+    scope: storage.type.function
+    settings:
+      foreground: "@emphFg@"
+      fontStyle: bold
+
+  - name: This/self parameter
+    scope:
+      - variable.language.this
+      - variable.parameter.function.language.special.self
+    settings:
+      fontStyle: bold
+
+  # Statements
+  # ----------
+
+  - name: Control keywords
+    scope: keyword.control
+    settings:
+      foreground: "@softBlue@"
+
+  # - name: Select statement keywords
+  #   scope:
+  #     - keyword.control.if
+  #     - keyword.control.else
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  # - name: Iteration statement keywords
+  #   scope:
+  #     - keyword.control.while
+  #     - keyword.control.do
+  #     - keyword.control.for
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  # - name: Jump statement keywords
+  #   scope:
+  #     - keyword.control.continue
+  #     - keyword.control.break
+  #     - keyword.control.goto
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  - name: Return statement keywords
+    scope:
+      - keyword.control.return
+      - keyword.control.throw
+    settings:
+      foreground: "@softRed@"
+
+  # - name: Exception block keywords
+  #   scope:
+  #     - keyword.control.try
+  #     - keyword.control.catch
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  # Others
+  # ------
+
+  # - name: CV qualifier
+  #   scope:
+  #     - storage.modifier.specifier.const
+  #     - storage.modifier.specifier.volatile
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  # Operator or punctuator
+  # ======================
+
+  - scope:
+      - keyword.operator
+      - entity.name.operator
+    settings:
+      foreground: "@softBlue@"
+      fontStyle: ""
+
+  - scope: storage.modifier.reference
+    settings:
+      fontStyle: ""
+
+  # Literals
+  # ========
+
+  - scope: constant.language
+    settings:
+      foreground: "@softBlue@"
+      fontStyle: bold
+
+  # - name: Boolean value
+  #   scope:
+  #     - constant.language.true
+  #     - constant.language.false
+  #     - constant.language.boolean
+  #   settings:
+  #     foreground: "@softBlue@"
+
+  - name: Numeric value
+    scope: constant.numeric
+    settings:
+      foreground: "@softBlue@"
+
+  - name: String value
+    scope: string
+    settings:
+      foreground: "@softGreen@"
+  #- scope: string.regexp
+  #  settings:
+  #    foreground: "@softRed@"
+  #- scope: string support.type.property-name
+  #  settings:
+  #    foreground: "@softViolet@"
+
+  # Identities
+  # ==========
+
+  # Module / namespace
+  # ------------------
+
+  - name: Namespace name
+    scope:
+      - entity.name.namespace
+      # - entity.other.attribute-name.namespace
+    settings:
+      foreground: "@softYellow@"
+
+  # Types
+  # -----
+
+  - name: Primitive type name
+    scope:
+      - storage.type.primitive
+      - storage.type.built-in
+    settings:
+      foreground: "@softViolet@"
+      fontStyle: bold
+
+  - name: User type name
+    scope:
+      - entity.name.type
+      # - entity.name.struct
+      # - entity.name.enum
+      # - entity.name.union
+      # - entity.name.trait
+      # - entity.name.interface
+      # - entity.name.impl
+      # - entity.other.inherited-class
+      # - support.type
+    settings:
+      foreground: "@softViolet@"
+
+  - scope: storage.type.return-type.lambda
+    settings:
+      foreground: "@softViolet@"
+
+  - name: Members name
+    scope:
+      - entity.name.function.member
+      - variable.other.property
+      - variable.other.enummember
+    settings:
+      fontStyle: italic
+
+  # Functions
+  # ---------
+
+  - name: Function parameter
+    scope:
+      - variable.parameter
+    settings:
+      foreground: "@softMagenta@"
+
+  - name: Keyword parameter of function
+    scope: variable.parameter.function-call
+    settings:
+      foreground: "@deEmphFg@"
+      fontStyle: bold
+
+  - name: Function parameter in definition
+    scope:
+      - meta.function.definition.parameters variable.parameter
+    settings:
+      fontStyle: underline
+
+  # Preprocessor
+  # ============
+
+  - scope:
+      - entity.name.function.preprocessor
+      - entity.name.function.macro
+    settings:
+      foreground: "@deEmphFg@"
+
+  - scope: entity.name.other.preprocessor.macro.predefined
+    settings:
+      fontStyle: bold
+
+  # Language support
+  # ================
+
+  - name: Built-in function
+    scope: support.function.builtin
+    settings:
+      fontStyle: bold
+
+  #- scope:
+  #    - meta.embedded
+  #    - source.groovy.embedded
+  #  settings:
+  #    foreground: "@fg@"
+
+  #- scope: entity.name.section
+  #  settings:
+  #    foreground: "@emphFg@"
+  #    fontStyle: bold
+  #- scope: entity.other.attribute-name
+  #  settings:
+  #    foreground: "@softMagenta@"
+  #- scope: punctuation.separator.namespace
+  #  settings:
+  #    foreground: "@fg@"
+
+  #- scope: token.info-token
+  #  settings:
+  #    foreground: "@vividGreen@"
+  #- scope: token.warn-token
+  #  settings:
+  #    foreground: "@vividYellow@"
+  #- scope: token.error-token
+  #  settings:
+  #    foreground: "@vividRed@"
+  #- scope: token.debug-token
+  #  settings:
+  #    foreground: "@vividMagenta@"
+
+  # =============================================================================
+  # Language Specifics
+  # =============================================================================
+
+  # C++
+  # ===
+
+  - scope:
+      - keyword.operator.new
+      - keyword.operator.delete
+    settings:
+      foreground: "@softRed@"
+      fontStyle: bold
+
+  - scope:
+      - keyword.other.using
+      - keyword.other.typedef
+    settings:
+      foreground: "@softRed@"
+      # fontStyle: bold
+
+  - scope:
+      - keyword.other.default.constructor.cpp
+      - keyword.other.delete.constructor.cpp
+    settings:
+      foreground: "@softBlue@"
+      # fontStyle: bold
+
+  - scope: keyword.other.operator.overload.cpp
+    settings:
+      foreground: "@softBlue@"
+      fontStyle: ""
+
+  - scope: variable.parameter.preprocessor.cpp
+    settings:
+      fontStyle: underline
+
+  # Python
+  # ======
+
+  - scope: keyword.operator.logical.python
+    settings:
+      fontStyle: bold
+
+  - scope: punctuation.definition.decorator.python
+    settings:
+      foreground: "@deEmphFg@"
+  - scope: entity.name.function.decorator.python
+    settings:
+      foreground: "@deEmphFg@"
+      fontStyle: bold
+
+  # Java
+  # ====
+
+  - scope: keyword.control.new.java
+    settings:
+      foreground: "@softRed@"
+      # fontStyle: bold
+
+  - scope: keyword.operator.instanceof.java
+    settings:
+      fontStyle: bold
+
+  # super, etc.
+  - scope: variable.language.java
+    settings:
+      fontStyle: bold
+
+  - scope: storage.modifier.import.java
+    settings:
+      fontStyle: ""
+
+  - scope: punctuation.definition.annotation.java
+    settings:
+      foreground: "@deEmphFg@"
+  - scope: storage.type.annotation.java
+    settings:
+      foreground: "@deEmphFg@"
+      fontStyle: bold
+
+  # Golang
+  # ======
+
+  - scope: key.function.go
+    settings:
+      foreground: "@emphFg@"
+      fontStyle: bold
+
+  - scope: storage.type.boolean.go
+    settings:
+      foreground: "@softBlue@"
+      fontStyle: bold
+
+  # - scope: entity.name.import.go
+  #   settings:
+  #     foreground: "@softYellow@"
+
+  # HTML, CSS, etc.
+  # ===============
+
+  - name: HTML tags
+    scope:
+      - entity.name.tag
+    settings:
+      foreground: "@softViolet@"
+
+  - name: HTML/CSS attribute names
+    scope:
+      - entity.other.attribute-name
+    settings:
+      foreground: "@softMagenta@"
+      fontStyle: italic
+
+  - name: CSS attribute parent selectors ('&')
+    scope:
+      - entity.other.attribute-name.parent-selector
+    settings:
+      foreground: "@softViolet@"
+
+  # JavaScript
+  # ==========
+
+  - scope: keyword.operator.expression
+    settings:
+      fontStyle: bold
+
+  - scope: support.function.js
+    settings:
+      fontStyle: bold
+
+  # Vue.js
+  # ======
+
+  - scope: meta.directive.vue entity.other.attribute-name
+    settings:
+      fontStyle: bold italic
+
+  - scope:
+      - expression.embedded punctuation.definition.generic.begin
+      - expression.embedded punctuation.definition.generic.end
+    settings:
+      foreground: "@softBlue@"
+
+  # Serializable / Config Langages
+  # ==============================
+
+  - scope:
+      - entity.name.function.target.makefile
+      - entity.name.tag.yaml
+      - support.type.property-name.json
+    settings:
+      foreground: "@softBlue@"
+
+# Semantic highlight
+semanticTokenColors:
+  # =============================================================================
+  # Language Common
+  # =============================================================================
+
+  # Comments
+  # ========
+
+  comment:
+    foreground: "@mediumGray@"
+
+  # Keywords
+  # ========
+
+  keyword:
+    bold: true
+
+  # Operators
+  # =========
+
+  operator:
+    foreground: "@softBlue@"
+    bold: false
+
+  # Literals
+  # ========
+
+  number:
+    foreground: "@softBlue@"
+
+  string:
+    foreground: "@softGreen@"
+
+  regexp:
+    foreground: "@softRed@"
+
+  # Identities
+  # ==========
+
+  # Module / namespace
+  # ------------------
+
+  namespace:
+    foreground: "@softYellow@"
+
+  # Types
+  # -----
+
+  type:
+    foreground: "@softViolet@"
+  class:
+    foreground: "@softViolet@"
+  enum:
+    foreground: "@softViolet@"
+  interface:
+    foreground: "@softViolet@"
+  struct:
+    foreground: "@softViolet@"
+
+  class.builtin:
+    bold: true
+
+  method:
+    italic: true
+  property:
+    italic: true
+  enumMember:
+    italic: true
+
+  method.static:
+    italic: false
+  property.static:
+    italic: false
+
+  # Functions
+  # ---------
+
+  parameter:
+    foreground: "@softMagenta@"
+  parameter.declaration:
+    underline: true
+
+  # Macros
+  # ------
+
+  macro:
+    foreground: "@deEmphFg@"
+
+  # Others
+  # ------
+
+  variable.builtin:
+    bold: true
+
+  # variable.declaration:
+  #   underline: true
+
+  # =============================================================================
+  # Language Specifics
+  # =============================================================================
+
+  # Python
+  # ======
+
+  magicFunction:python:
+    bold: true
+    italic: true
+
+  function.decorator:python:
+    foreground: "@deEmphFg@"
+    bold: true
+
+  selfParameter:python:
+    bold: true
+  selfParameter.declaration:python:
+    underline: false
+
+  variable.declaration:python:
+    underline: true
+
+  # Java
+  # ====
+
+  annotation:java:
+    foreground: "@deEmphFg@"
+    bold: true
+
+  # Golang
+  # ======
+
+  variable.definition:go:
+    underline: true
+
+  # Rust
+  # ====
+
+  # "*.mutable:rust":
+  #   fontStyle: ""
+  # variable.mutable:rust:
+  #   fontStyle: italic
+  # parameter.mutable:rust:
+  #   fontStyle: italic
+  # variable.static:rust:
+  #   fontStyle: ""
+  # selfKeyword:rust:
+  #   fontStyle: bold italic
+  # "*.unsafe:rust":
+  #   foreground: "@softRed@"

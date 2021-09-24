@@ -1,14 +1,14 @@
 {
-	"name": "lunaria",
-	"displayName": "Lunaria",
-	"publisher": "dfoxfranke",
-	"description": "A family of scientifically-designed, moderate-contrast color themes",
+	"name": "semantic-lunaria",
+	"displayName": "Semantic Lunaria",
+	"publisher": "ifplusor",
+	"description": "A family of scientifically-designed, moderate-contrast, semantic color themes",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/dfoxfranke/lunaria"
+		"url": "https://github.com/ifplusor/lunaria"
 	},
 	"homepage": "https://lunaria.design",
-	"bugs": "https://github.com/dfoxfranke/lunaria/issues",
+	"bugs": "https://github.com/ifplusor/lunaria/issues",
 	"license": "Apache-2.0",
 	"version": "0.0.1",
 	"engines": {
@@ -20,17 +20,17 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Lunaria Light",
+				"label": "Semantic Lunaria Light",
 				"uiTheme": "vs",
 				"path": "./themes/light.json"
 			},
 			{
-				"label": "Lunaria Dark",
+				"label": "Semantic Lunaria Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark.json"
 			},
 			{
-				"label": "Lunaria Eclipse",
+				"label": "Semantic Lunaria Eclipse",
 				"uiTheme": "vs-dark",
 				"path": "./themes/eclipse.json"
 			}
@@ -38,6 +38,15 @@
 	},
 	"dependencies": {
 		"vsce": "^1.84.0"
+	},
+	"devDependencies": {
+		"js-yaml": "^4.1.0"
+	},
+	"scripts": {
+		"build": "make",
+		"package": "vsce package",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
 	},
 	"__metadata": {
 		"id": "173a0eff-cb2f-483b-b0da-e8caac3cdc43",

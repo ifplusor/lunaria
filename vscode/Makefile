@@ -4,8 +4,12 @@ DARK_THEME=../lunaria-dark.json
 ECLIPSE_THEME=../lunaria-eclipse.json
 
 all: themes/light.json themes/dark.json themes/eclipse.json
+
 clean: 
-	$(RM) themes/light.json themes/dark.json themes/eclipse.json
+	$(RM) themes/template.json themes/light.json themes/dark.json themes/eclipse.json
+
+themes/template.json: themes/template.yaml
+	npx js-yaml themes/template.yaml > themes/template.json
 
 themes/light.json: themes/template.json $(LIGHT_THEME)
 	$(LUNARIZE) $(LIGHT_THEME) $< $@
