@@ -10,7 +10,7 @@
 	"homepage": "https://lunaria.design",
 	"bugs": "https://github.com/ifplusor/lunaria/issues",
 	"license": "Apache-2.0",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
@@ -47,10 +47,5 @@
 		"package": "vsce package",
 		"vscode:prepublish": "npm run build",
 		"vsce-publish": "vsce publish"
-	},
-	"__metadata": {
-		"id": "173a0eff-cb2f-483b-b0da-e8caac3cdc43",
-		"publisherDisplayName": "Daniel Fox Franke",
-		"publisherId": "06b6c3cd-caaa-426e-9f2d-b1feeece83c3"
 	}
 }
