@@ -1,4 +1,8 @@
-# Lunaria
+# Semanic Lunaria
+
+This extension is based on the Lunaria palette and adds semantic highlighting.
+
+## Lunaria
 
 Lunaria is a fam­ily of sooth­ing, moderate-​contrast color
 palettes. Lu­naria's col­ors were gen­er­ated al­go­rith­mi­cally,
@@ -32,11 +36,28 @@ Lu­naria in­cludes three dis­tinct palettes:
 For more information about how Lunaria was constructed and how you
 can incorporate it into your own work (such as themes for other IDEs
 or terminals), see <https://lunaria.design>. For the sources of this
-extension and other ready-made Lunaria color themes, see
+extension, see <https://github.com/ifplusor/lunaria>. And other ready-made Lunaria color themes, see
 <https://github.com/dfoxfranke/lunaria>.
+
+## Semantic Highlighting
+
+### Principles
+
+1. Font:
+   - Bold:      keywords
+   - Italic:    members
+   - Underline: declaration
+
+2. Color:
+   - emphFg:   define function, define namespace
+   - deEmphFg: comment, macro
+   - Red:      define type, return value, manage memory
+   - Yellow:   module
+   - Green:    string
+   - Blue:     keywords
+   - Violet:   type
+   - Magenta:  parameter
 
 ## Screenshots
 
-![Light screenshot](https://raw.github.com/dfoxfranke/lunaria/master/vscode/screenshots/light.webp)
-![Dark screenshot](https://raw.github.com/dfoxfranke/lunaria/master/vscode/screenshots/dark.webp)
-![Eclipse screenshot](https://raw.github.com/dfoxfranke/lunaria/master/vscode/screenshots/eclipse.webp)
+TBD
