@@ -37,10 +37,10 @@
 		]
 	},
 	"dependencies": {
-		"vsce": "^1.84.0"
 	},
 	"devDependencies": {
-		"js-yaml": "^4.1.0"
+		"js-yaml": "^4.1.0",
+		"vsce": "^1.84.0"
 	},
 	"scripts": {
 		"build": "make",
