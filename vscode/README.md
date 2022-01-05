@@ -1,4 +1,4 @@
-# Semanic Lunaria
+# Semantic Lunaria
 
 This extension is based on the Lunaria palette and adds semantic highlighting.
 
