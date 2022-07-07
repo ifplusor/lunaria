@@ -1,0 +1,23 @@
+accent: "#268bd2"
+background: "@bg@"
+details: DETAILS
+foreground: "@fg@"
+terminal_colors:
+  bright:
+    black: "@darkGray@"
+    blue: "@termHighViolet@"
+    cyan: "@termHighBlue@"
+    green: "@termHighGreen@"
+    magenta: "@termHighMagenta@"
+    red: "@termHighRed@"
+    white: "@white@"
+    yellow: "@termHighYellow@"
+  normal:
+    black: "@black@"
+    blue: "@termLowViolet@"
+    cyan: "@termLowBlue@"
+    green: "@termLowGreen@"
+    magenta: "@termLowMagenta@"
+    red: "@termLowRed@"
+    white: "@lightGray@"
+    yellow: "@termLowYellow@"
