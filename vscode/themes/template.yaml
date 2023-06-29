@@ -715,616 +715,615 @@ colors:
 
 # Syntax highlight
 tokenColors:
-  # =============================================================================
-  # General
-  # =============================================================================
-
-  - scope: emphasis
-    settings:
-      fontStyle: italic
-  - scope: strong
-    settings:
-      fontStyle: bold
-
-  # Diffs
-  # =====
-
-  - scope: meta.diff.header
-    settings:
-      foreground: "@bgBlue@"
-  - scope: markup.inserted
-    settings:
-      foreground: "@bgGreen@"
-  - scope: markup.deleted
-    settings:
-      foreground: "@bgRed@"
-  - scope: markup.changed
-    settings:
-      foreground: "@bgBlue@"
-  - scope: invalid
-    settings:
-      foreground: "@vividRed@"
-      fontStyle: bold underline
-  - scope: invalid.deprecated
-    settings:
-      foreground: "@vividYellow@"
-      fontStyle: bold underline
-
-  # Markdown / RST / Prose
-  # ======================
-
-  - name: Underlined markup
-    scope: markup.underline
-    settings:
-      fontStyle: underline
-
-  - name: Bold markup
-    scope: markup.bold
-    settings:
-      foreground: "@softRed@"
-      fontStyle: bold
-
-  - name: Markup headings
-    scope:
-      - markup.heading
-    settings:
-      foreground: "@softViolet@"
-      fontStyle: bold
-
-  - name: Markup italic
-    scope: markup.italic
-    settings:
-      foreground: "@softYellow@"
-      fontStyle: italic
-
-  - name: Bullets, lists (prose)
-    scope:
-      - beginning.punctuation.definition.list.markdown
-      - beginning.punctuation.definition.quote.markdown
-      - punctuation.definition.link.restructuredtext
-    settings:
-      foreground: "@softBlue@"
-
-  - name: Inline code (prose)
-    scope:
-      - markup.inline.raw
-      - markup.raw.restructuredtext
-    settings:
-      foreground: "@softGreen@"
-
-  - name: Links (prose)
-    scope:
-      - markup.underline.link
-      - markup.underline.link.image
-    settings:
-      foreground: "@softBlue@"
-
-  - name: Link text, image alt text (prose)
-    scope:
-      - meta.link.reference.def.restructuredtext
-      - punctuation.definition.directive.restructuredtext
-      - string.other.link.description
-      - string.other.link.title
-    settings:
-      foreground: "@softMagenta@"
-
-  - name: Blockquotes (prose)
-    scope:
-      - entity.name.directive.restructuredtext
-      - markup.quote
-    settings:
-      foreground: "@softYellow@"
-      fontStyle: italic
-
-  - name: Horizontal rule (prose)
-    scope: meta.separator.markdown
-    settings:
-      foreground: "@deEmptFg@"
-
-  - name: Code blocks
-    scope:
-      - fenced_code.block.language
-      - markup.raw.inner.restructuredtext
-      - markup.fenced_code.block.markdown punctuation.definition.markdown
-    settings:
-      foreground: "@softGreen@"
-
-  - name: Prose constants
-    scope: punctuation.definition.constant.restructuredtext
-    settings:
-      foreground: "@softViolet@"
-
-  - name: Braces in markdown headings
-    scope:
-      - markup.heading.markdown punctuation.definition.string.begin
-      - markup.heading.markdown punctuation.definition.string.end
-    settings:
-      foreground: "@softViolet@"
-
-  - name: Braces in markdown paragraphs
-    scope:
-      - meta.paragraph.markdown punctuation.definition.string.begin
-      - meta.paragraph.markdown punctuation.definition.string.end
-    settings:
-      foreground: "@fg@"
-
-  - name: Braces in markdown blockquotes
-    scope:
-      - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.begin
-      - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.end
-    settings:
-      foreground: "@softYellow@"
-
-  # =============================================================================
-  # Language Common
-  # =============================================================================
-
-  # Basic Rules:
-  #
-  # 1. Font:
-  #    - Bold:      keywords
-  #    - Italic:    members
-  #    - Underline: declaration
-  #
-  # 2. Color:
-  #    - Red:     define type, return value, manage memory
-  #    - Yellow:  module
-  #    - Green:   string
-  #    - Blue:    keywords
-  #    - Violet:  type
-  #    - Magenta: parameter
-  #
-  #    - emphFg:   define function, define namespace
-  #    - deEmphFg: comment, macro
-  #
-
-  # Comments
-  # ========
-
-  - scope:
-      - comment
-      - punctuation.definition.comment
-    settings:
-      foreground: "@deEmphFg@"
-
-  # Keywords
-  # ========
-
-  - scope: keyword
-    settings:
-      fontStyle: bold
-
-  - scope:
-      - storage.modifier
-      - storage.type.modifier
-    settings:
-      foreground: "@softBlue@"
-      fontStyle: bold
-
-  # Namespace
-  # ---------
-
-  - name: Namespace keywords
-    scope: storage.type.namespace
-    settings:
-      foreground: "@emphFg@"
-      fontStyle: bold
-
-  # Types
-  # -----
-
-  - name: Class-key/enum keywords
-    scope:
-      - storage.type.class
-      - storage.type.struct
-      - storage.type.union
-      - storage.type.enum
-    settings:
-      foreground: "@softRed@"
-      fontStyle: bold
-
-  # - name: Access specifier
-  #   scope: storage.type.modifier.access.control
-  #   settings:
-  #     foreground: "@softBlue@"
-  #     fontStyle: bold
-
-  - scope: storage.type.template
-    settings:
-      fontStyle: bold
-
-  # Functions
-  # ---------
-
-  - name: Function keywords
-    scope: storage.type.function
-    settings:
-      foreground: "@emphFg@"
-      fontStyle: bold
-
-  - name: This/self parameter
-    scope:
-      - variable.language.this
-      - variable.parameter.function.language.special.self
-    settings:
-      fontStyle: bold
-
-  # Statements
-  # ----------
-
-  - name: Control keywords
-    scope: keyword.control
-    settings:
-      foreground: "@softBlue@"
-
-  # - name: Select statement keywords
-  #   scope:
-  #     - keyword.control.if
-  #     - keyword.control.else
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  # - name: Iteration statement keywords
-  #   scope:
-  #     - keyword.control.while
-  #     - keyword.control.do
-  #     - keyword.control.for
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  # - name: Jump statement keywords
-  #   scope:
-  #     - keyword.control.continue
-  #     - keyword.control.break
-  #     - keyword.control.goto
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  - name: Return statement keywords
-    scope:
-      - keyword.control.return
-      - keyword.control.throw
-    settings:
-      foreground: "@softRed@"
-
-  # - name: Exception block keywords
-  #   scope:
-  #     - keyword.control.try
-  #     - keyword.control.catch
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  # Others
-  # ------
-
-  # - name: CV qualifier
-  #   scope:
-  #     - storage.modifier.specifier.const
-  #     - storage.modifier.specifier.volatile
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  # Operator or punctuator
-  # ======================
-
-  - scope:
-      - keyword.operator
-      - entity.name.operator
-    settings:
-      foreground: "@softBlue@"
-      fontStyle: ""
-
-  - scope: storage.modifier.reference
-    settings:
-      fontStyle: ""
-
-  # Literals
-  # ========
-
-  - scope: constant.language
-    settings:
-      foreground: "@softBlue@"
-      fontStyle: bold
-
-  # - name: Boolean value
-  #   scope:
-  #     - constant.language.true
-  #     - constant.language.false
-  #     - constant.language.boolean
-  #   settings:
-  #     foreground: "@softBlue@"
-
-  - name: Numeric value
-    scope: constant.numeric
-    settings:
-      foreground: "@softBlue@"
-
-  - name: String value
-    scope: string
-    settings:
-      foreground: "@softGreen@"
-  #- scope: string.regexp
-  #  settings:
-  #    foreground: "@softRed@"
-  #- scope: string support.type.property-name
-  #  settings:
-  #    foreground: "@softViolet@"
-
-  # Identities
-  # ==========
-
-  # Module / namespace
-  # ------------------
-
-  - name: Namespace name
-    scope:
-      - entity.name.namespace
-      # - entity.other.attribute-name.namespace
-    settings:
-      foreground: "@softYellow@"
-
-  # Types
-  # -----
-
-  - name: Primitive type name
-    scope:
-      - storage.type.primitive
-      - storage.type.built-in
-    settings:
-      foreground: "@softViolet@"
-      fontStyle: bold
-
-  - name: User type name
-    scope:
-      - entity.name.type
-      # - entity.name.struct
-      # - entity.name.enum
-      # - entity.name.union
-      # - entity.name.trait
-      # - entity.name.interface
-      # - entity.name.impl
-      # - entity.other.inherited-class
-      # - support.type
-    settings:
-      foreground: "@softViolet@"
-
-  - scope: storage.type.return-type.lambda
-    settings:
-      foreground: "@softViolet@"
-
-  - name: Members name
-    scope:
-      - entity.name.function.member
-      - variable.other.property
-      - variable.other.enummember
-    settings:
-      fontStyle: italic
-
-  # Functions
-  # ---------
-
-  - name: Function parameter
-    scope:
-      - variable.parameter
-    settings:
-      foreground: "@softMagenta@"
-
-  - name: Keyword parameter of function
-    scope: variable.parameter.function-call
-    settings:
-      foreground: "@deEmphFg@"
-      fontStyle: bold
-
-  - name: Function parameter in definition
-    scope:
-      - meta.function.definition.parameters variable.parameter
-    settings:
-      fontStyle: underline
-
-  # Preprocessor
-  # ============
-
-  - scope:
-      - entity.name.function.preprocessor
-      - entity.name.function.macro
-    settings:
-      foreground: "@deEmphFg@"
-
-  - scope: entity.name.other.preprocessor.macro.predefined
-    settings:
-      fontStyle: bold
-
-  # Language support
-  # ================
-
-  - name: Built-in function
-    scope: support.function.builtin
-    settings:
-      fontStyle: bold
-
-  #- scope:
-  #    - meta.embedded
-  #    - source.groovy.embedded
-  #  settings:
-  #    foreground: "@fg@"
-
-  #- scope: entity.name.section
-  #  settings:
-  #    foreground: "@emphFg@"
-  #    fontStyle: bold
-  #- scope: entity.other.attribute-name
-  #  settings:
-  #    foreground: "@softMagenta@"
-  #- scope: punctuation.separator.namespace
-  #  settings:
-  #    foreground: "@fg@"
-
-  #- scope: token.info-token
-  #  settings:
-  #    foreground: "@vividGreen@"
-  #- scope: token.warn-token
-  #  settings:
-  #    foreground: "@vividYellow@"
-  #- scope: token.error-token
-  #  settings:
-  #    foreground: "@vividRed@"
-  #- scope: token.debug-token
-  #  settings:
-  #    foreground: "@vividMagenta@"
-
-  # =============================================================================
-  # Language Specifics
-  # =============================================================================
-
-  # C++
-  # ===
-
-  - scope:
-      - keyword.operator.new
-      - keyword.operator.delete
-    settings:
-      foreground: "@softRed@"
-      fontStyle: bold
-
-  - scope:
-      - keyword.other.using
-      - keyword.other.typedef
-    settings:
-      foreground: "@softRed@"
-      # fontStyle: bold
-
-  - scope:
-      - keyword.other.default.constructor.cpp
-      - keyword.other.delete.constructor.cpp
-    settings:
-      foreground: "@softBlue@"
-      # fontStyle: bold
-
-  - scope: keyword.other.operator.overload.cpp
-    settings:
-      foreground: "@softBlue@"
-      fontStyle: ""
-
-  - scope: variable.parameter.preprocessor.cpp
-    settings:
-      fontStyle: underline
-
-  # Python
-  # ======
-
-  - scope: keyword.operator.logical.python
-    settings:
-      fontStyle: bold
-
-  - scope: punctuation.definition.decorator.python
-    settings:
-      foreground: "@deEmphFg@"
-  - scope: entity.name.function.decorator.python
-    settings:
-      foreground: "@deEmphFg@"
-      fontStyle: bold
-
-  # Java
-  # ====
-
-  - scope: keyword.control.new.java
-    settings:
-      foreground: "@softRed@"
-      # fontStyle: bold
-
-  - scope: keyword.operator.instanceof.java
-    settings:
-      fontStyle: bold
-
-  # super, etc.
-  - scope: variable.language.java
-    settings:
-      fontStyle: bold
-
-  - scope: storage.modifier.import.java
-    settings:
-      fontStyle: ""
-
-  - scope: punctuation.definition.annotation.java
-    settings:
-      foreground: "@deEmphFg@"
-  - scope: storage.type.annotation.java
-    settings:
-      foreground: "@deEmphFg@"
-      fontStyle: bold
-
-  # Golang
-  # ======
-
-  - scope: key.function.go
-    settings:
-      foreground: "@emphFg@"
-      fontStyle: bold
-
-  - scope: storage.type.boolean.go
-    settings:
-      foreground: "@softBlue@"
-      fontStyle: bold
-
-  # - scope: entity.name.import.go
-  #   settings:
-  #     foreground: "@softYellow@"
-
-  # HTML, CSS, etc.
-  # ===============
-
-  - name: HTML tags
-    scope:
-      - entity.name.tag
-    settings:
-      foreground: "@softViolet@"
-
-  - name: HTML/CSS attribute names
-    scope:
-      - entity.other.attribute-name
-    settings:
-      foreground: "@softMagenta@"
-      fontStyle: italic
-
-  - name: CSS attribute parent selectors ('&')
-    scope:
-      - entity.other.attribute-name.parent-selector
-    settings:
-      foreground: "@softViolet@"
-
-  # JavaScript
-  # ==========
-
-  - scope: keyword.operator.expression
-    settings:
-      fontStyle: bold
-
-  - scope: support.function.js
-    settings:
-      fontStyle: bold
-
-  # Vue.js
-  # ======
-
-  - scope: meta.directive.vue entity.other.attribute-name
-    settings:
-      fontStyle: bold italic
-
-  - scope:
-      - expression.embedded punctuation.definition.generic.begin
-      - expression.embedded punctuation.definition.generic.end
-    settings:
-      foreground: "@softBlue@"
-
-  # Serializable / Config Langages
-  # ==============================
-
-  - scope:
-      - entity.name.function.target.makefile
-      - entity.name.tag.yaml
-      - support.type.property-name.json
-    settings:
-      foreground: "@softBlue@"
+# =============================================================================
+# General
+# =============================================================================
+
+- scope: emphasis
+  settings:
+    fontStyle: italic
+- scope: strong
+  settings:
+    fontStyle: bold
+
+# Diffs
+# =====
+
+- scope: meta.diff.header
+  settings:
+    foreground: "@bgBlue@"
+- scope: markup.inserted
+  settings:
+    foreground: "@bgGreen@"
+- scope: markup.deleted
+  settings:
+    foreground: "@bgRed@"
+- scope: markup.changed
+  settings:
+    foreground: "@bgBlue@"
+- scope: invalid
+  settings:
+    foreground: "@vividRed@"
+    fontStyle: bold underline
+- scope: invalid.deprecated
+  settings:
+    foreground: "@vividYellow@"
+    fontStyle: bold underline
+
+# Markdown / RST / Prose
+# ======================
+
+- name: Underlined markup
+  scope: markup.underline
+  settings:
+    fontStyle: underline
+
+- name: Bold markup
+  scope: markup.bold
+  settings:
+    foreground: "@softRed@"
+    fontStyle: bold
+
+- name: Markup headings
+  scope:
+  - markup.heading
+  settings:
+    foreground: "@softViolet@"
+    fontStyle: bold
+
+- name: Markup italic
+  scope: markup.italic
+  settings:
+    foreground: "@softYellow@"
+    fontStyle: italic
+
+- name: Bullets, lists (prose)
+  scope:
+  - beginning.punctuation.definition.list.markdown
+  - beginning.punctuation.definition.quote.markdown
+  - punctuation.definition.link.restructuredtext
+  settings:
+    foreground: "@softBlue@"
+
+- name: Inline code (prose)
+  scope:
+  - markup.inline.raw
+  - markup.raw.restructuredtext
+  settings:
+    foreground: "@softGreen@"
+
+- name: Links (prose)
+  scope:
+  - markup.underline.link
+  - markup.underline.link.image
+  settings:
+    foreground: "@softBlue@"
+
+- name: Link text, image alt text (prose)
+  scope:
+  - meta.link.reference.def.restructuredtext
+  - punctuation.definition.directive.restructuredtext
+  - string.other.link.description
+  - string.other.link.title
+  settings:
+    foreground: "@softMagenta@"
+
+- name: Blockquotes (prose)
+  scope:
+  - entity.name.directive.restructuredtext
+  - markup.quote
+  settings:
+    foreground: "@softYellow@"
+    fontStyle: italic
+
+- name: Horizontal rule (prose)
+  scope: meta.separator.markdown
+  settings:
+    foreground: "@deEmptFg@"
+
+- name: Code blocks
+  scope:
+  - fenced_code.block.language
+  - markup.raw.inner.restructuredtext
+  - markup.fenced_code.block.markdown punctuation.definition.markdown
+  settings:
+    foreground: "@softGreen@"
+
+- name: Prose constants
+  scope: punctuation.definition.constant.restructuredtext
+  settings:
+    foreground: "@softViolet@"
+
+- name: Braces in markdown headings
+  scope:
+  - markup.heading.markdown punctuation.definition.string.begin
+  - markup.heading.markdown punctuation.definition.string.end
+  settings:
+    foreground: "@softViolet@"
+
+- name: Braces in markdown paragraphs
+  scope:
+  - meta.paragraph.markdown punctuation.definition.string.begin
+  - meta.paragraph.markdown punctuation.definition.string.end
+  settings:
+    foreground: "@fg@"
+
+- name: Braces in markdown blockquotes
+  scope:
+  - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.begin
+  - markup.quote.markdown meta.paragraph.markdown punctuation.definition.string.end
+  settings:
+    foreground: "@softYellow@"
+
+# =============================================================================
+# Language Common
+# =============================================================================
+
+# Basic Rules:
+#
+# 1. Font:
+#    - Bold:      keywords
+#    - Italic:    members
+#    - Underline: declaration
+#
+# 2. Color:
+#    - emphFg:   define function, define namespace
+#    - deEmphFg: comment, macro
+#    - Red:      define type, return value, manage memory
+#    - Yellow:   module
+#    - Green:    string
+#    - Blue:     keywords
+#    - Violet:   type
+#    - Magenta:  parameter
+#
+
+# Comments
+# ========
+
+- scope:
+  - comment
+  - punctuation.definition.comment
+  settings:
+    foreground: "@deEmphFg@"
+
+# Keywords
+# ========
+
+- scope: keyword
+  settings:
+    fontStyle: bold
+
+- scope:
+  - storage.modifier
+  - storage.type.modifier
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: bold
+
+# Namespace
+# ---------
+
+- name: Namespace keywords
+  scope: storage.type.namespace
+  settings:
+    foreground: "@emphFg@"
+    fontStyle: bold
+
+# Types
+# -----
+
+- name: Class-key/enum keywords
+  scope:
+  - storage.type.class
+  - storage.type.struct
+  - storage.type.union
+  - storage.type.enum
+  settings:
+    foreground: "@softRed@"
+    fontStyle: bold
+
+# - name: Access specifier
+#   scope: storage.type.modifier.access.control
+#   settings:
+#     foreground: "@softBlue@"
+#     fontStyle: bold
+
+- scope: storage.type.template
+  settings:
+    fontStyle: bold
+
+# Functions
+# ---------
+
+- name: Function keywords
+  scope: storage.type.function
+  settings:
+    foreground: "@emphFg@"
+    fontStyle: bold
+
+- name: This/self parameter
+  scope:
+  - variable.language.this
+  - variable.parameter.function.language.special.self
+  settings:
+    fontStyle: bold
+
+# Statements
+# ----------
+
+- name: Control keywords
+  scope: keyword.control
+  settings:
+    foreground: "@softBlue@"
+
+# - name: Select statement keywords
+#   scope:
+#     - keyword.control.if
+#     - keyword.control.else
+#   settings:
+#     foreground: "@softBlue@"
+
+# - name: Iteration statement keywords
+#   scope:
+#     - keyword.control.while
+#     - keyword.control.do
+#     - keyword.control.for
+#   settings:
+#     foreground: "@softBlue@"
+
+# - name: Jump statement keywords
+#   scope:
+#     - keyword.control.continue
+#     - keyword.control.break
+#     - keyword.control.goto
+#   settings:
+#     foreground: "@softBlue@"
+
+- name: Return statement keywords
+  scope:
+  - keyword.control.return
+  - keyword.control.throw
+  settings:
+    foreground: "@softRed@"
+
+# - name: Exception block keywords
+#   scope:
+#     - keyword.control.try
+#     - keyword.control.catch
+#   settings:
+#     foreground: "@softBlue@"
+
+# Others
+# ------
+
+# - name: CV qualifier
+#   scope:
+#     - storage.modifier.specifier.const
+#     - storage.modifier.specifier.volatile
+#   settings:
+#     foreground: "@softBlue@"
+
+# Operator or punctuator
+# ======================
+
+- scope:
+  - keyword.operator
+  - entity.name.operator
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: ""
+
+- scope: storage.modifier.reference
+  settings:
+    fontStyle: ""
+
+# Literals
+# ========
+
+- scope: constant.language
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: bold
+
+# - name: Boolean value
+#   scope:
+#     - constant.language.true
+#     - constant.language.false
+#     - constant.language.boolean
+#   settings:
+#     foreground: "@softBlue@"
+
+- name: Numeric value
+  scope: constant.numeric
+  settings:
+    foreground: "@softBlue@"
+
+- name: String value
+  scope: string
+  settings:
+    foreground: "@softGreen@"
+#- scope: string.regexp
+#  settings:
+#    foreground: "@softRed@"
+#- scope: string support.type.property-name
+#  settings:
+#    foreground: "@softViolet@"
+
+# Identities
+# ==========
+
+# Module / namespace
+# ------------------
+
+- name: Namespace name
+  scope:
+  - entity.name.namespace
+  # - entity.other.attribute-name.namespace
+  settings:
+    foreground: "@softYellow@"
+
+# Types
+# -----
+
+- name: Primitive type name
+  scope:
+  - storage.type.primitive
+  - storage.type.built-in
+  settings:
+    foreground: "@softViolet@"
+    fontStyle: bold
+
+- name: User type name
+  scope:
+  - entity.name.type
+  # - entity.name.struct
+  # - entity.name.enum
+  # - entity.name.union
+  # - entity.name.trait
+  # - entity.name.interface
+  # - entity.name.impl
+  # - entity.other.inherited-class
+  # - support.type
+  settings:
+    foreground: "@softViolet@"
+
+- scope: storage.type.return-type.lambda
+  settings:
+    foreground: "@softViolet@"
+
+- name: Members name
+  scope:
+  - entity.name.function.member
+  - variable.other.property
+  - variable.other.enummember
+  settings:
+    fontStyle: italic
+
+# Functions
+# ---------
+
+- name: Function parameter
+  scope:
+  - variable.parameter
+  settings:
+    foreground: "@softMagenta@"
+
+- name: Keyword parameter of function
+  scope: variable.parameter.function-call
+  settings:
+    foreground: "@deEmphFg@"
+    fontStyle: bold
+
+- name: Function parameter in definition
+  scope:
+  - meta.function.definition.parameters variable.parameter
+  settings:
+    fontStyle: underline
+
+# Preprocessor
+# ============
+
+- scope:
+  - entity.name.function.preprocessor
+  - entity.name.function.macro
+  settings:
+    foreground: "@deEmphFg@"
+
+- scope: entity.name.other.preprocessor.macro.predefined
+  settings:
+    fontStyle: bold
+
+# Language support
+# ================
+
+- name: Built-in function
+  scope: support.function.builtin
+  settings:
+    fontStyle: bold
+
+#- scope:
+#    - meta.embedded
+#    - source.groovy.embedded
+#  settings:
+#    foreground: "@fg@"
+
+#- scope: entity.name.section
+#  settings:
+#    foreground: "@emphFg@"
+#    fontStyle: bold
+#- scope: entity.other.attribute-name
+#  settings:
+#    foreground: "@softMagenta@"
+#- scope: punctuation.separator.namespace
+#  settings:
+#    foreground: "@fg@"
+
+#- scope: token.info-token
+#  settings:
+#    foreground: "@vividGreen@"
+#- scope: token.warn-token
+#  settings:
+#    foreground: "@vividYellow@"
+#- scope: token.error-token
+#  settings:
+#    foreground: "@vividRed@"
+#- scope: token.debug-token
+#  settings:
+#    foreground: "@vividMagenta@"
+
+# =============================================================================
+# Language Specifics
+# =============================================================================
+
+# C++
+# ===
+
+- scope:
+  - keyword.operator.new
+  - keyword.operator.delete
+  settings:
+    foreground: "@softRed@"
+    fontStyle: bold
+
+- scope:
+  - keyword.other.using
+  - keyword.other.typedef
+  settings:
+    foreground: "@softRed@"
+    # fontStyle: bold
+
+- scope:
+  - keyword.other.default.constructor.cpp
+  - keyword.other.delete.constructor.cpp
+  settings:
+    foreground: "@softBlue@"
+    # fontStyle: bold
+
+- scope: keyword.other.operator.overload.cpp
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: ""
+
+- scope: variable.parameter.preprocessor.cpp
+  settings:
+    fontStyle: underline
+
+# Python
+# ======
+
+- scope: keyword.operator.logical.python
+  settings:
+    fontStyle: bold
+
+- scope: punctuation.definition.decorator.python
+  settings:
+    foreground: "@deEmphFg@"
+- scope: entity.name.function.decorator.python
+  settings:
+    foreground: "@deEmphFg@"
+    fontStyle: bold
+
+# Java
+# ====
+
+- scope: keyword.control.new.java
+  settings:
+    foreground: "@softRed@"
+    # fontStyle: bold
+
+- scope: keyword.operator.instanceof.java
+  settings:
+    fontStyle: bold
+
+# super, etc.
+- scope: variable.language.java
+  settings:
+    fontStyle: bold
+
+- scope: storage.modifier.import.java
+  settings:
+    fontStyle: ""
+
+- scope: punctuation.definition.annotation.java
+  settings:
+    foreground: "@deEmphFg@"
+- scope: storage.type.annotation.java
+  settings:
+    foreground: "@deEmphFg@"
+    fontStyle: bold
+
+# Golang
+# ======
+
+- scope: key.function.go
+  settings:
+    foreground: "@emphFg@"
+    fontStyle: bold
+
+- scope: storage.type.boolean.go
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: bold
+
+# - scope: entity.name.import.go
+#   settings:
+#     foreground: "@softYellow@"
+
+# HTML, CSS, etc.
+# ===============
+
+- name: HTML tags
+  scope:
+  - entity.name.tag
+  settings:
+    foreground: "@softViolet@"
+
+- name: HTML/CSS attribute names
+  scope:
+  - entity.other.attribute-name
+  settings:
+    foreground: "@softMagenta@"
+    fontStyle: italic
+
+- name: CSS attribute parent selectors ('&')
+  scope:
+  - entity.other.attribute-name.parent-selector
+  settings:
+    foreground: "@softViolet@"
+
+# JavaScript
+# ==========
+
+- scope: keyword.operator.expression
+  settings:
+    fontStyle: bold
+
+- scope: support.function.js
+  settings:
+    fontStyle: bold
+
+# Vue.js
+# ======
+
+- scope: meta.directive.vue entity.other.attribute-name
+  settings:
+    fontStyle: bold italic
+
+- scope:
+  - expression.embedded punctuation.definition.generic.begin
+  - expression.embedded punctuation.definition.generic.end
+  settings:
+    foreground: "@softBlue@"
+
+# Serializable / Config Languages
+# ==============================
+
+- scope:
+  - entity.name.function.target.makefile
+  - entity.name.tag.yaml
+  - support.type.property-name.json
+  settings:
+    foreground: "@softBlue@"
 
 # Semantic highlight
 semanticTokenColors:
@@ -1336,7 +1335,7 @@ semanticTokenColors:
   # ========
 
   comment:
-    foreground: "@mediumGray@"
+    foreground: "@deEmphFg@"
 
   # Keywords
   # ========
@@ -1365,6 +1364,14 @@ semanticTokenColors:
 
   # Identities
   # ==========
+
+  # variable
+
+  variable.builtin:
+    bold: true
+
+  # variable.declaration:
+  #   underline: true
 
   # Module / namespace
   # ------------------
@@ -1417,12 +1424,6 @@ semanticTokenColors:
 
   # Others
   # ------
-
-  variable.builtin:
-    bold: true
-
-  # variable.declaration:
-  #   underline: true
 
   # =============================================================================
   # Language Specifics
