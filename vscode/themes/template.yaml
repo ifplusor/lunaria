@@ -819,7 +819,7 @@ tokenColors:
 - name: Horizontal rule (prose)
   scope: meta.separator.markdown
   settings:
-    foreground: "@deEmptFg@"
+    foreground: "@deEmphFg@"
 
 - name: Code blocks
   scope:
@@ -1294,6 +1294,11 @@ tokenColors:
 # JavaScript
 # ==========
 
+- scope: storage.type.js
+  settings:
+    foreground: "@softBlue@"
+    fontStyle: bold
+
 - scope: keyword.operator.expression
   settings:
     fontStyle: bold
@@ -1459,6 +1464,12 @@ semanticTokenColors:
   # ======
 
   variable.definition:go:
+    underline: true
+
+  # JavaScript
+  # ======
+
+  variable.declaration:javascript:
     underline: true
 
   # Rust
