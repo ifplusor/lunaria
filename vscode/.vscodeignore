@@ -6,4 +6,6 @@ vsc-extension-quickstart.md
 screenshots/
 themes/template.yaml
 themes/template.json
+themes/template-eink.yaml
+themes/template-eint.json
 Makefile

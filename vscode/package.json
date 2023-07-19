@@ -10,9 +10,9 @@
 	"homepage": "https://lunaria.design",
 	"bugs": "https://github.com/ifplusor/lunaria/issues",
 	"license": "Apache-2.0",
-	"version": "0.0.3-alpha",
+	"version": "0.0.4",
 	"engines": {
-		"vscode": "^1.48.0"
+		"vscode": "^1.63.0"
 	},
 	"categories": [
 		"Themes"
@@ -44,12 +44,12 @@
 	"dependencies": {},
 	"devDependencies": {
 		"js-yaml": "^4.1.0",
-		"vsce": "^1.84.0"
+		"vsce": "^2.15.0"
 	},
 	"scripts": {
 		"build": "make",
-		"package": "vsce package",
+		"package": "vsce package --pre-release",
 		"vscode:prepublish": "npm run build",
-		"vsce-publish": "vsce publish"
+		"vsce-publish": "vsce publish --pre-release"
 	}
 }
