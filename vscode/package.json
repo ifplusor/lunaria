@@ -10,7 +10,7 @@
 	"homepage": "https://lunaria.design",
 	"bugs": "https://github.com/ifplusor/lunaria/issues",
 	"license": "Apache-2.0",
-	"version": "0.0.2",
+	"version": "0.0.3-alpha",
 	"engines": {
 		"vscode": "^1.48.0"
 	},
@@ -33,11 +33,15 @@
 				"label": "Semantic Lunaria Eclipse",
 				"uiTheme": "vs-dark",
 				"path": "./themes/eclipse.json"
+			},
+			{
+				"label": "Semantic Lunaria E-Ink",
+				"uiTheme": "hc-light",
+				"path": "./themes/e-ink.json"
 			}
 		]
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"js-yaml": "^4.1.0",
 		"vsce": "^1.84.0"

@@ -1,0 +1,57 @@
+{
+        "_name": "Lunaria E-Ink",
+        "_type": "light",
+
+        "hcRed": "#683824",
+        "hcYellow": "#554600",
+        "hcGreen": "#2E502E",
+        "hcBlue": "#234B69",
+        "hcViolet": "#484069",
+        "hcMagenta": "#613651",
+
+        "l0": "#000000",
+        "l1": "#111111",
+        "l2": "#222222",
+        "l3": "#333333",
+        "l4": "#444444",
+        "l5": "#555555",
+        "l6": "#666666",
+        "l7": "#777777",
+        "l8": "#888888",
+        "l9": "#999999",
+        "l10": "#AAAAAA",
+        "l11": "#BBBBBB",
+        "l12": "#CCCCCC",
+        "l13": "#DDDDDD",
+        "l14": "#EEEEEE",
+        "l15": "#FFFFFF",
+
+        "deepBlack": "#000000",
+        "black": "#111111",
+        "darkGray": "#444444",
+        "mediumGray": "#888888",
+        "lightGray": "#CCCCCC",
+        "white": "#EEEEEE",
+        "brightWhite": "#FFFFFF",
+
+        "darkGrey": "#444444",
+        "mediumGrey": "#888888",
+        "lightGrey": "#CCCCCC",
+
+        "emphBg": "#FFFFFF",
+        "bg": "#EEEEEE",
+        "deEmphBg": "#CCCCCC",
+        "deEmphFg": "#888888",
+        "fg": "#444444",
+        "emphFg": "#111111",
+
+        "invEmphBg": "#000000",
+        "invBg": "#111111",
+        "invDeEmphBg": "#444444",
+        "invDeEmphFg": "#888888",
+        "invFg": "#CCCCCC",
+        "invEmphFg": "#EEEEEE",
+
+        "bgHighlight": "#FFFFFF",
+        "bgLowlight": "#CCCCCC"
+}
