@@ -1,0 +1,80 @@
+{
+  "_description": "Design targets for the E-Ink palette. Edit these values, then run eink-tune.py to regenerate lunaria-eink.json.",
+
+  "anchors": {
+    "_description": "bg and fg define the luminance range. Hand-picked warm hexes: R > G > B for paper-like warmth.",
+
+    "bg":       { "hex": "#E8E2DA", "L*": 90, "note": "warm paper — background" },
+    "fg":       { "hex": "#47423E", "L*": 28, "note": "warm dark — body text" },
+    "emphBg":   { "hex": "#FCF9F4", "L*": 98, "note": "warm near-white — widgets, hover" },
+    "emphFg":   { "hex": "#2B2623", "L*": 16, "note": "warm near-black — emphasized text" },
+    "bgHighlight": { "hex": "#F2EDE7", "L*": 94, "note": "slightly brighter than bg, for match highlights" },
+    "bgLowlight":  { "hex": "#D0CAC2", "L*": 82, "note": "subtle lowlight, for inactive selection" },
+    "deEmphBg": { "L*": 74, "note": "de-emphasized background — computed" },
+    "mediumGray": { "L*": 52, "note": "mid gray — secondary text, borders — computed" },
+    "deEmphFg": { "L*": 38, "note": "comment color — computed" }
+  },
+
+  "neutrals": {
+    "_description": "L* targets for computed neutrals. Interpolated between bg and fg in OKLCH space to preserve warmth.",
+
+    "emphBg":   98,
+    "bg":       90,
+    "bgHighlight": 94,
+    "bgLowlight": 82,
+    "deEmphBg": 74,
+    "mediumGray": 52,
+    "deEmphFg": 38,
+    "fg":       28,
+    "emphFg":   16
+  },
+
+  "tiers": {
+    "_description": "Three color tiers. Each tier has an L* target per hue (warm/cool asymmetry in vivid), and a chroma scale factor (< 1 = desaturate).",
+
+    "soft": {
+      "note": "Syntax highlighting body — midpoint between bg and fg.",
+      "L*":  { "Red": 49, "Yellow": 50, "Green": 52, "Blue": 50, "Violet": 49, "Magenta": 49 },
+      "chroma_scale": 1.0
+    },
+
+    "vivid": {
+      "note": "Emphasis, status, errors. Warm hues lighter than cool (perceptual asymmetry). 10% desaturated for eye comfort.",
+      "L*":  { "Red": 43, "Yellow": 47, "Green": 41, "Blue": 38, "Violet": 38, "Magenta": 39 },
+      "chroma_scale": 0.90
+    },
+
+    "hc": {
+      "note": "Critical elements — line numbers, links, return/throw, regexp. Must stay tight near fg (ΔL* ≥ 2).",
+      "L*":  { "Red": 31, "Yellow": 32, "Green": 32, "Blue": 31, "Violet": 31, "Magenta": 30 },
+      "chroma_scale": 1.0
+    }
+  },
+
+  "bg_colors": {
+    "_description": "Background washes for diff, git, search highlights. L* targets, hue/chroma from current palette.",
+
+    "bgRed":        68,
+    "bgYellow":     71,
+    "bgGreen":      70,
+    "bgBlue":       70,
+    "bgDarkBlue":   39,
+    "bgLightYellow": 85
+  },
+
+  "terminal": {
+    "_description": "ANSI 16-color terminal palette. termLow and termHigh pairs with ΔL* ≈ 15-20.",
+
+    "termLowRed":    30, "termHighRed":    46,
+    "termLowYellow": 34, "termHighYellow": 54,
+    "termLowGreen":  36, "termHighGreen":  52,
+    "termLowBlue":   33, "termHighBlue":   50,
+    "termLowViolet": 32, "termHighViolet": 47,
+    "termLowMagenta": 29, "termHighMagenta": 46
+  },
+
+  "contrast": {
+    "target_bg_fg": [7.5, 8.0],
+    "note": "Above WCAG AAA (7:1) but gentler than 9.4:1 for extended reading."
+  }
+}

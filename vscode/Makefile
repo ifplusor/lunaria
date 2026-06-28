@@ -2,6 +2,8 @@ LUNARIZE=python3 ../lunarize.py
 LIGHT_THEME=../lunaria-light.json
 DARK_THEME=../lunaria-dark.json
 ECLIPSE_THEME=../lunaria-eclipse.json
+# E-Ink palette is hand-tuned. To adjust it, edit ../eink-targets.json
+# and run:  python3 ../eink-tune.py
 EINK_THEME=../lunaria-eink.json
 
 all: themes/light.json themes/dark.json themes/eclipse.json themes/e-ink.json
