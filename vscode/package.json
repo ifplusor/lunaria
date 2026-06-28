@@ -10,7 +10,7 @@
 	"homepage": "https://lunaria.design",
 	"bugs": "https://github.com/ifplusor/lunaria/issues",
 	"license": "Apache-2.0",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"engines": {
 		"vscode": "^1.81.0"
 	},
